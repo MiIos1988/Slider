@@ -30,6 +30,13 @@ allImg[counter-1].classList.add("border")
 
 }) 
 
+allImg.forEach(img=>{
+    img.addEventListener("click", changeBorder)
+})
 
+function changeBorder(){
+    allImg.forEach(img=>img.classList.remove("border"))
+    this.classList.add("border")
+}
     
 
