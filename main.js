@@ -36,7 +36,15 @@ allImg.forEach(img=>{
 
 function changeBorder(){
     allImg.forEach(img=>img.classList.remove("border"))
-    this.classList.add("border")
+    this.classList.add("border")   
+   let getAtr =this.getAttribute("src"); 
+   mainImg.setAttribute("src", getAtr);
+   
+   for(let i =0; i<allImg.length;i++){
+    if(allImg[i]=== this){
+        counter= i+1
+    }
+   }
 }
     
 
