@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  box-shadow: 0 0 5px #ddd;
+  display: flex;
+  margin: 50px auto;
+  width: 50vw;
+  height: 80vh;
+}
+.box {
+  width: 200px;
+  /* max-height: 100%; */
+  /* max-height: 100%; */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.box > img {
+  width: 120px;
+  height: 120px;
+  margin: 15px;
+}
+.mainImg > img {
+  height: 500px;
+  margin: 0 auto;
+}
+.arrow {
+  border: none;
+  background-color: inherit;
+  font-size: 80px;
+  color: #ddd;
+  position: absolute;
+}
+.slider {
+  position: relative;
+}
+.left {
+  top: 40%;
+  left: 10%;
+}
+.right {
+  top: 40%;
+  right: 10%;
+}
