@@ -4,8 +4,6 @@ const mainImg = document.querySelector(".slider")
 const allImg = document.querySelectorAll(".box > img")
 const container = document.querySelector(".container")
 const arrow = document.querySelector(".arrow")
-
-
 let counter = 1
 
 btnRight.addEventListener("click", ()=>{
@@ -16,7 +14,6 @@ btnRight.addEventListener("click", ()=>{
 mainImg.setAttribute("src", `img/img${counter}.jpg`)
 allImg.forEach(img=>img.classList.remove("border"))
 allImg[counter-1].classList.add("border")
-
 }) 
 
 btnLeft.addEventListener("click", ()=>{
